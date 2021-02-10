@@ -1,6 +1,6 @@
 # evernote_clone
 
-#Backend
+# Backend
 npm i
 
 node server.js
@@ -15,7 +15,7 @@ MONGO_DB_NAME=evernoteClone
 MONGO_DB_NOTES_COLLECTION=notes
 
 
-#Client
+# Client
 npm i
 
 npm start
