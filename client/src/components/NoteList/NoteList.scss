@@ -1,0 +1,81 @@
+.note-list{
+    height: 100%;
+    width: 380px;
+    max-width: 670px;
+    min-width: 196px;
+    background: #f8f8f8;
+    border-right: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    .note-list__header{
+        padding: 5px 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+        .note-list__header-title{
+            width: 100%;
+            flex: 1;
+            h1{
+                margin: 15px 0 20px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .note-list__header-sub-head{
+            width: 100%;
+            margin: 5px;
+            font-size: 14px;
+        }
+    }
+    .note-list__body{
+        flex: 1;
+        overflow: auto;
+        .note-card{
+            height:120px;
+            padding: 20px 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border:1px solid #e6e6e6;
+            text-decoration: none;
+            .note-card__head{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex:1;
+                font-size: 14px;
+                .note-card__title{
+                    width:100%;
+                    color: #333;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .note-card__desc{
+                    width:100%;
+                    color: #737373;
+                    margin-top: 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .note-card__date{
+                color: #4d4d4d;
+                font-size: 13px;
+            }
+            &:hover{
+                cursor: pointer;
+                background: #fff;
+            }
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}

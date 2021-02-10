@@ -1,0 +1,119 @@
+.sidenavbar{
+    width: 240px;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    height: 100%;
+    .sidenavbar-top{
+      flex: 1;
+      .sidenavbar-top__profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        .profile-icon{
+          background: #f8cbad;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .profile-title{
+          display: flex;
+          align-items: center;
+          flex :1;
+          margin-left: 10px;
+          .icon{
+            margin: 0 10px;
+            font-size: 12px;
+          }
+        }
+      }
+      .sidenavbar-top__search{
+        padding: 15px;
+        .search-block{
+          display: flex;
+          align-items: center;
+          background: #404040;
+          padding:8px 10px;
+          border-radius: 50px;
+          .icon{
+            font-size: 12px;
+          }
+          input{
+            color: #fff;
+            margin-left: 10px;
+            background: none;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+      .sidenavbar-top__create-note{
+        padding: 0 15px;
+        color: #fff;
+        .create-note-btn{
+          display: flex;
+          align-items: center;
+          background: #03a82d;
+          padding:8px 10px;
+          border-radius: 50px;
+          cursor: pointer;
+          .icon{
+            font-size: 12px;
+          }
+          .title{
+            margin-left: 10px;
+            background: none;
+            outline: none;
+            border: none;
+          }
+          &:hover{
+            background: #008f26;
+          }
+        }
+      }
+      .sidenavbar-top__menu-item{
+        margin-top:10px;
+        ul{
+          li{
+            a{
+              display: flex;
+              align-items: center;
+              padding: 10px 18px;
+              color: #ccc;
+              text-decoration: none;
+              .icon{
+                font-size: 14px;
+                margin-right: 8px;
+              }
+              &:hover{
+                cursor: pointer;
+                background: #404040;
+              }
+              &.active{
+                background: #404040;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sidenavbar-bottom{
+      padding: 8px 15px;
+      border-top: 1px solid #555;
+      .sidenavbar-bottom__need-help{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        .icon{
+          font-size: 14px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
